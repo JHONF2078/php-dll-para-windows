@@ -99,9 +99,11 @@ vamos a suponer que tiene instalado xampp con php 7.3.6 en un equipo con windows
     
    - ahora vamos a configurar el script  para que solo nos compile las libreria que necesitamos para ello ejecutamos el siguiente comando 
     
-        **configure --disable-all --enable-cli  --with-pdo-informix="C:\Program Files\Informix Client-SDK",shared --enable-pdo**
+     **configure --disable-all --enable-cli  --with-pdo-informix="C:\Program Files\Informix Client-SDK",shared --enable-pdo**
         
-      
+     
+     ![no se encontro la imagen](https://raw.githubusercontent.com/JHONF2078/php-dll-para-windows/master/img/17-configuracion.PNG)
+   
         
      - **configure** : es el comado para la configuracion, siempre debe ir
      - **--disable-al**  deshabilita la compilacion de las otras libreria
@@ -116,17 +118,31 @@ vamos a suponer que tiene instalado xampp con php 7.3.6 en un equipo con windows
            
   - podemos ver un resumen de las extenciones habilitadas pdo como libreria estatica y pdo_informix como libreria dinamica (dll)
   
+    ![no se encontro la imagen](https://raw.githubusercontent.com/JHONF2078/php-dll-para-windows/master/img/18-ext_habilitadas.PNG)
   
-  --ahora compilamos php mediante el comando **nmake**, podemos ver la ruta donde se ha compilado nuestro php
+  - ahora compilamos php mediante el comando **nmake**, podemos ver la ruta donde se ha compilado nuestro php
   
-  --podemos ver nuestra dll creada
+   ![no se encontro la imagen](https://raw.githubusercontent.com/JHONF2078/php-dll-para-windows/master/img/19-ruta_compilacion.PNG)
   
-  -- ahora copiamos la dll creada dentro del directorio **C:\xampp\php\ext**
+  - podemos ver nuestra dll creada
   
-  --agregamos la referencia dentro del php.ini de xampp
+  ![no se encontro la imagen](https://raw.githubusercontent.com/JHONF2078/php-dll-para-windows/master/img/20-dll_creada.PNG)
   
   
-  --verificamos el phpinfo()
+- agregar dll a php (para este ejemplo xampp con php 7.3.6 vc 15 x64)
+  
+  - ahora copiamos la dll creada dentro del directorio **C:\xampp\php\ext**
+  
+    ![no se encontro la imagen](https://raw.githubusercontent.com/JHONF2078/php-dll-para-windows/master/img/21-dll_xammp.PNG)
+  
+  - agregamos la referencia dentro del php.ini de xampp
+  
+    ![no se encontro la imagen](https://raw.githubusercontent.com/JHONF2078/php-dll-para-windows/master/img/22-php_ini.PNG)
+  
+  
+  - verificamos el phpinfo()
+  
+    ![no se encontro la imagen](https://raw.githubusercontent.com/JHONF2078/php-dll-para-windows/master/img/23.php_module.PNG)
   
   
   
