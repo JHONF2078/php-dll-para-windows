@@ -28,7 +28,7 @@ vamos a suponer que tiene instalado xampp con php 7.3.6 en un equipo con windows
    
    
     
-- Crear dll
+- contruyendo el directorio
 
    - abrimos la consola de desarrollado de visual studio la cual esta ubicada en **C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Visual Studio 2017\Visual Studio Tools\VC** (abrir como administrador), si queremos crear nuestra dll para 64 bit debemos abrir **Símbolo del sistema de las herramientas nativas x64 de VS 2017**  y si la quemos para 32 bits debemos abrir **x86 Native Tools Command Prompt for VS 2017**
    
@@ -45,7 +45,7 @@ vamos a suponer que tiene instalado xampp con php 7.3.6 en un equipo con windows
    - una vez dentro del directorio **php-sdk** , ahora vamos a ejecutar el script de inicio  **phpsdk-vc15-x64** ( se ejecuta este script ya que vamos a compilar php 7.3.6 a 64(bits) 
    
     
-    ![no se encontro la imagen](https://raw.githubusercontent.com/JHONF2078/php-dll-para-windows/master/img/6-iniciar_script.PNG)
+     ![no se encontro la imagen](https://raw.githubusercontent.com/JHONF2078/php-dll-para-windows/master/img/6-     iniciar_script.PNG)
    
    
    - ejecutamos **phpsdk_buildtree phpdev** para crear la estructura del directorio, esdir se crea la ruta
@@ -59,7 +59,21 @@ vamos a suponer que tiene instalado xampp con php 7.3.6 en un equipo con windows
    
      ![no se encontro la imagen](https://raw.githubusercontent.com/JHONF2078/php-dll-para-windows/master/img/9-copiamos_php.PNG)
    
-   - en este mismo directorio cremos una carpeta llamada pecl, descomprimimos la libreria  dpo_informix y la guardamos en este directorio
+   - en este mismo directorio cremos una carpeta llamada pecl
+   
+   
+   -dentro de la carpeta pecl descomprimimos la libreria  dpo_informix
+   
+   
+   -ahora entramos  a los recurso de php mediante el comado  **cd C:\php-sdk\phpdev\vc15\x64\php-7.3.6-src**
+   
+   -una vez ubicados dentro de php ejecutamos el comado **phpsdk_deps -u**,el cual descargara los dependencias de php automaticamente
+   
+   - se nos creara una nueva carpeta con las dependencias descargadas
+   
+   
+
+   - Compilar 
    
    
    
