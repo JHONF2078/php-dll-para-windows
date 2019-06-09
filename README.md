@@ -44,14 +44,20 @@ vamos a suponer que tiene instalado xampp con php 7.3.6 en un equipo con windows
    
    - una vez dentro del directorio **php-sdk** , ahora vamos a ejecutar el script de inicio  **phpsdk-vc15-x64** ( se ejecuta este script ya que vamos a compilar php 7.3.6 a 64(bits) 
    
+    
+    ![no se encontro la imagen](https://raw.githubusercontent.com/JHONF2078/php-dll-para-windows/master/img/6-iniciar_script.PNG)
+   
    
    - ejecutamos **phpsdk_buildtree phpdev** para crear la estructura del directorio, esdir se crea la ruta
    **C:\php-sdk\phpdev\vc15\x64**
    
-   
+     ![no se encontro la imagen](https://raw.githubusercontent.com/JHONF2078/php-dll-para-windows/master/img/7-estructura.PNG)
+     
+     ![no se encontro la imagen](https://raw.githubusercontent.com/JHONF2078/php-dll-para-windows/master/img/8-estructura2.PNG)
    
    - descomprimimos los recursos de php y los copiamos en este ruta
    
+     ![no se encontro la imagen](https://raw.githubusercontent.com/JHONF2078/php-dll-para-windows/master/img/9-copiamos_php.PNG)
    
    - en este mismo directorio cremos una carpeta llamada pecl, descomprimimos la libreria  dpo_informix y la guardamos en este directorio
    
