@@ -45,7 +45,8 @@ vamos a suponer que tiene instalado xampp con php 7.3.6 en un equipo con windows
    - una vez dentro del directorio **php-sdk** , ahora vamos a ejecutar el script de inicio  **phpsdk-vc15-x64** ( se ejecuta este script ya que vamos a compilar php 7.3.6 a 64(bits) 
    
     
-     ![no se encontro la imagen](https://raw.githubusercontent.com/JHONF2078/php-dll-para-windows/master/img/6-  iniciar_script.PNG)
+     ![no se encontro la imagen](https://raw.githubusercontent.com/JHONF2078/php-dll-para-windows/master/img/6-iniciar_script.PNG)
+ 
    
    
    - ejecutamos **phpsdk_buildtree phpdev** para crear la estructura del directorio, esdir se crea la ruta
@@ -63,19 +64,19 @@ vamos a suponer que tiene instalado xampp con php 7.3.6 en un equipo con windows
    
    ![no se encontro la imagen](https://raw.githubusercontent.com/JHONF2078/php-dll-para-windows/master/img/10-crear_pecl.PNG)
    
-   -dentro de la carpeta pecl descomprimimos la libreria  dpo_informix
+   - dentro de la carpeta pecl descomprimimos la libreria  dpo_informix
    
     ![no se encontro la imagen](https://raw.githubusercontent.com/JHONF2078/php-dll-para-windows/master/img/11-copiamos_pdoinf.PNG)
    
-   -ahora entramos  a los recurso de php mediante el comado  **cd C:\php-sdk\phpdev\vc15\x64\php-7.3.6-src**
+    - ahora entramos  a los recurso de php mediante el comado  **cd C:\php-sdk\phpdev\vc15\x64\php-7.3.6-src**
    
      ![no se encontro la imagen](https://raw.githubusercontent.com/JHONF2078/php-dll-para-windows/master/img/12-carpeta_php.PNG)
    
-   -una vez ubicados dentro de php ejecutamos el comado **phpsdk_deps -u**,el cual descargara los dependencias de php automaticamente
+    - una vez ubicados dentro de php ejecutamos el comado **phpsdk_deps -u**,el cual descargara los dependencias de php automaticamente
    
      ![no se encontro la imagen](https://raw.githubusercontent.com/JHONF2078/php-dll-para-windows/master/img/13-descargar_depend.PNG)
    
-   - se nos creara una nueva carpeta con las dependencias descargadas
+    - se nos creara una nueva carpeta con las dependencias descargadas
    
       ![no se encontro la imagen](https://raw.githubusercontent.com/JHONF2078/php-dll-para-windows/master/img/14-dependencias.PNG)
 
