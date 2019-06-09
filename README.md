@@ -24,6 +24,9 @@ vamos a suponer que tiene instalado xampp con php 7.3.6 en un equipo con windows
        
        - si vamos a compilar  PHP 7.4+: instalar visual studio 2019 (vc16)
    
+   
+   
+   
     
 - Crear dll
 
@@ -40,6 +43,25 @@ vamos a suponer que tiene instalado xampp con php 7.3.6 en un equipo con windows
    -  en la consola de visual studio digitamos  cd c:\php-sdk\ para  entrar al directorio recien creado
    
    - una vez dentro del directorio **php-sdk** , ahora vamos a ejecutar el script de inicio  **phpsdk-vc15-x64** ( se ejecuta este script ya que vamos a compilar php 7.3.6 a 64(bits) 
+   
+   
+   - ejecutamos **phpsdk_buildtree phpdev** para crear la estructura del directorio, esdir se crea la ruta
+   **C:\php-sdk\phpdev\vc15\x64**
+   
+   
+   
+   - descomprimimos los recursos de php y los copiamos en este ruta
+   
+   
+   - en este mismo directorio cremos una carpeta llamada pecl, descomprimimos la libreria  dpo_informix y la guardamos en este directorio
+   
+   
+   
+   
+   
+   
+   
+   
    
   
 
