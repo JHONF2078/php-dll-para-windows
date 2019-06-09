@@ -49,7 +49,7 @@ vamos a suponer que tiene instalado xampp con php 7.3.6 en un equipo con windows
  
    
    
-   - ejecutamos **phpsdk_buildtree phpdev** para crear la estructura del directorio, esdir se crea la ruta
+   - ejecutamos **phpsdk_buildtree phpdev** para crear la estructura del directorio, es decir se crea la ruta
    **C:\php-sdk\phpdev\vc15\x64**
    
      ![no se encontro la imagen](https://raw.githubusercontent.com/JHONF2078/php-dll-para-windows/master/img/7-estructura.PNG)
@@ -80,9 +80,47 @@ vamos a suponer que tiene instalado xampp con php 7.3.6 en un equipo con windows
    
       ![no se encontro la imagen](https://raw.githubusercontent.com/JHONF2078/php-dll-para-windows/master/img/14-dependencias.PNG)
 
-   - Compilar 
+
+- Compilar 
+   
+   - con la estructura del proyecto ya creada  y si aun estamos ubicados en   **C:\php-sdk\phpdev\vc15\x64\php-7.3.6-src** ,entonces ejecutamos el comando **buildconf*  el cual reconstruira el fichero configure.js 
+    *nota :  recuerde que si quiere compilar una extension posteriormente  debera ingresar al directorio C:\php-sdk y ejecutar el comando **phpsdk-vc15-x64** para inicial al script, despues debe ir al directorio **C:\php-sdk\phpdev\vc15\x64\php-7.3.6-src** y despues si ejecuta el comado **buildconf*
+    
+    - ejecutamos el comado configure --help, donde podemos la linea  **--with-pdo-informix**,  esto significa que ya tenemos la libreroa pdo-informix lista para cargar 
+    
+        *nota :    
+        (**--enable** significa que es una libreria lista paracargar y **--with** significa que es una libreria lista para  cargar pero que depende de otras, en este caso de la libreria pdo)*
+   
+    
+   - ahora vamos a configurar el script  para que solo nos compile las libreria que necesitamos para ello ejecutamos el siguiente comando 
+    
+        **configure   configure --disable-all --enable-cli  --with-pdo-informix="C:\Program Files\Informix Client-SDK",shared --enable-pdo**
+        
+     - **configure** : es el comado para la configuracion, siempre debe ir
+     - **--disable-al**  deshabilita la compilacion de las otras libreria
+     - **--enable-cli**  creara la consola  cli de php
+     - **-with-pdo-informix="C:\Program Files\Informix Client-SDK,shared"** :  habilitara la creacion de la libreria pdo-informix como una libreria dll (shared) y ademas requiere el sdk de informix para poder compilarla 
+     - **--enable-pdo** , habilitara la libreria pdo ya que es requerida para crear la libreria pdo-informix
+     
+     *nota: la mayoria de las librerias solo requiere ejecutar el comando  **--enable-nombre_libreria** o el comando **--     with-nombre_libreria** para ser compiladas , pero la libreria pdo-informix en un caso especial que requiere de un sdk para su compilacion
+     
+     *nota : recuerde que para compilar una libreria como dll debe ejecutar el comando **--enable-nombre_libreria=shared** e el comado **--with-nombre_libreria=shared** *
+           
+           
+           
+           
+    
+    
+    
+    
+    
+    
    
    
+   
+   
+   
+     
    
    
    
