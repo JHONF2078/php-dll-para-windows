@@ -1,5 +1,5 @@
 # php-dll-para-windows
-manual de como crear sus propias dll para windows
+manual de como crear sus propias dll para windows tomado de https://wiki.php.net/internals/windows/stepbystepbuild_sdk_2
 
 vamos a suponer que tiene instalado xampp con php 7.3.6 en un equipo con windows 10 x64(bits) y necesita la dll php_pdo_informix, la cual hace parte de los repositorios pecl y no esta como dll para windows (esta dll permite la conexion con bases de datos informix )
 
