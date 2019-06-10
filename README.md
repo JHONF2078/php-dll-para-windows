@@ -84,7 +84,7 @@ vamos a suponer que tiene instalado xampp con php 7.3.6 en un equipo con windows
 - Compilar 
    
    - con la estructura del proyecto ya creada  y si aun estamos ubicados en   **C:\php-sdk\phpdev\vc15\x64\php-7.3.6-src** ,entonces ejecutamos el comando **buildconf*  el cual reconstruira el fichero configure.js 
-    *nota :  recuerde que si quiere compilar una extension posteriormente  debera ingresar al directorio C:\php-sdk y ejecutar el comando **phpsdk-vc15-x64** para inicial al script, despues debe ir al directorio **C:\php-sdk\phpdev\vc15\x64\php-7.3.6-src** y despues si ejecuta el comado **buildconf*
+    *nota :  recuerde que si quiere compilar una extension posteriormente  debera ingresar al directorio C:\php-sdk y ejecutar el comando **phpsdk-vc15-x64** para inicial al script, despues debe ir al directorio **C:\php-sdk\phpdev\vc15\x64\php-7.3.6-src** y despues si ejecuta el comado **buildconf** *
     
      ![no se encontro la imagen](https://raw.githubusercontent.com/JHONF2078/php-dll-para-windows/master/img/15-buildconf.PNG)
 
